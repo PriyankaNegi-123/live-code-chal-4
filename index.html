@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Code 4</title>
+</head>
+<style>
+    body{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-container{
+        margin-top: 1rem;
+    }
+    label{
+        font-size: 1.4rem;
+    }
+    input{
+        width: 8.5rem;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .input-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #btnRed{
+        background-color: red;
+    }
+    #btnGreen{
+        background-color: green;
+    }
+    #btnBlue{
+        background-color: blue;
+    }
+</style>
+<body>
+    <main>
+        <div class="input-container">
+            <label for="text">Enter a text</label>
+            <input type="text" id="text" value="">
+        </div>
+        <div class="btn-container">
+            <button class="btn" id="btnRed">Red</button>
+            <button class="btn" id="btnGreen">Green</button>
+            <button class="btn" id=btnBlue>Blue</button>
+        </div>
+    </main>
+    <script>
+        const inputEl = document.getElementById("text");
+        const btnRedEl = document.getElementById("btnRed");
+        const btnGreenEl = document.getElementById("btnGreen");
+        const btnBlueEl = document.getElementById("btnBlue");
+
+        function btnRedFunc(){
+            inputEl.style.color = "red";
+        }
+        function btnGreenFunc(){
+            inputEl.style.color = "green";
+        }
+        function btnBlueFunc(){
+            inputEl.style.color = "blue";
+        }
+
+        btnRedEl.addEventListener("click", btnRedFunc);
+        btnGreenEl.addEventListener("click", btnGreenFunc);
+        btnBlueEl.addEventListener("click", btnBlueFunc);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
